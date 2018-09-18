@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -15,15 +15,20 @@
             <h1 id = "title">Pat's Salmon Cookies</h1>
             <ul>
                 <li><a href="#">
-                        <div id = "navButton">
+                        <div class = "navButton">
                             <div class="toggleNavButtonTop"></div>
                             <div class="toggleNavButtonMid"></div>
                             <div class="toggleNavButtonBot"></div>
+                        
+                            <div class = "dropdown">
+                                <ul>
+                                    <li class= "real"><a href="index.html">Home</a></li>
+                                    <li class= "real"><a href="sales.html">Sales</a></li>
+                                </ul>  
+                            </div>
                         </div>
                     </a>
-                        <ul class = "dropdown">
-                            <li class= "real"><a href="sales.html">Sales</a></li>
-                        </ul>          
+                     
                 </li>
             </ul>
 
@@ -31,10 +36,13 @@
     </header>
 
     <main>
-        <div class="bg"></div>
+        <div class="bg">
+            <div class = "overlay"></div>
+        </div>
 
     </main>
     
+    <footer></footer>
 
     
 </body>

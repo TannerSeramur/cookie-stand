@@ -29,101 +29,60 @@ nav{
     margin: 0;
     padding: 0;
     line-height: 50px;
- 
 }
 
-li {
-    /* display: block; */
-    transition-duration: 0.5s;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top:-10px;
-    /* background: #white; */
-    /* top:-4px; */
-    /* padding-right: 40px; */
-    background-color: transparent;
-    height: 70px;
-   }
-   .real li{
-       background-color: orange;
-       margin: 0;
-   }
-   a{
-       margin: 0;
-       padding: 0;
-       /* background-color: brown; */
-   }
-   
-   li:hover {
-     cursor: pointer;
-     
-     
-   }
-   
-   ul li ul {
-     visibility: hidden;
-     opacity: 0;
-     position: absolute;
-     transition: all 0.5s ease;
-     margin-top: 1rem;
-     left: 0;
-     display: none;
-   }
-   #navButton{
-    /* background-color: red; */
-    width: 60px;
-    height: 35px;
-    margin: 0;
-    padding: 0;
-   }
-   
-   ul li:hover > ul,
-   ul li ul:hover {
-     visibility: visible;
-     opacity: 1;
-     display: block;
-     padding: 0;
-    margin: 0;
+.navButton{
+    position: relative;
+    display: inline-block;
+    background-color:transparent;
+    top:-36px;
+    left: 10px;
+    width:60px;
+    height: 65px;
+}
 
-   }
-   
-   ul li ul li {
-     clear: both;
-     width: 100%;
-     padding: 0;
-    margin: 0;
-   }
 
   .dropdown{
-       background:yellow;
-       position: relative;
-       top: 40px;
-       padding: 0;
-       margin: 0;
+    /* background:yellow; */
+    display: none;
+    position: absolute;
+    top:65px;
+    left:-10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    /* top: 100px; */
        
    }
+   .navButton:hover .dropdown {
+    display: block;
+}
+li{
+    list-style-type: none ;
+}
 
 .toggleNavButtonTop{
     width: 30px;
     height: 2px;
-    background-color: #f0ede3;
+    background-color: #303960 ;
     position: absolute;
     left: 30px;
-    top: 14px;
+    top: 44px;
     margin-left: -20px;
     border-radius: 2px;
     padding: 0;
-       margin: 0;
+    margin: 0;
 }
 
 .toggleNavButtonMid{
     width: 30px;
     height: 2px;
-    background-color: #f0ede3;
+    background-color: #303960;
     position: absolute;
     left: 30px;
-    top: 21px;
+    top: 51px;
     margin-left: -20px;
     border-radius: 2px;
     padding: 0;
@@ -133,22 +92,41 @@ li {
 .toggleNavButtonBot{
     width: 30px;
     height: 2px;
-    background-color: #f0ede3;
+    background-color: #303960;
     position: absolute;
     left: 30px;
-    top: 28px;
+    top: 58px;
     margin-left: -20px;
     border-radius: 2px;
     padding: 0;
        margin: 0;
 }
-main{
-    /* background-color: green; */
-}
+
 .bg{
     background-image: url("img/cookiebg.jpeg");
-    height: 100%;
+    height: 700px; 
+    width: 100vw; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: .8;
+} 
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
 }
+
+
+
+
+
+
+
+
+footer{
+    background-color: #f5b19c;
+    height: 30px;
+    width: 100vw;
+}
+ 
