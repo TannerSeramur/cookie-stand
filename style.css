@@ -1,0 +1,133 @@
+/* color palete */
+/* #303960 -> purple */
+/* #f0ede3 -> white */
+/* #f5b19c -> pink  */
+/* #f6c570 -> yellow */
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    margin:0;
+    padding: 0;
+}
+
+#title{
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -10px;
+    left: 40%;
+}
+
+nav{
+    background-color: #f5b19c;
+    height: 32px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+
+.navButton{
+    position: relative;
+    display: inline-block;
+    background-color:transparent;
+    top:-36px;
+    left: 10px;
+    width:60px;
+    height: 70px;
+}
+
+
+  .dropdown{
+    /* background:yellow; */
+    display: none;
+    position: absolute;
+    top:67px;
+    left:-10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    /* top: 100px; */
+       
+   }
+   .navButton:hover .dropdown {
+    display: block;
+}
+li{
+    list-style-type: none ;
+}
+
+.toggleNavButtonTop{
+    width: 30px;
+    height: 2px;
+    background-color: #303960 ;
+    position: absolute;
+    left: 30px;
+    top: 44px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.toggleNavButtonMid{
+    width: 30px;
+    height: 2px;
+    background-color: #303960;
+    position: absolute;
+    left: 30px;
+    top: 51px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+       margin: 0;
+}
+
+.toggleNavButtonBot{
+    width: 30px;
+    height: 2px;
+    background-color: #303960;
+    position: absolute;
+    left: 30px;
+    top: 58px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+       margin: 0;
+}
+
+.bg{
+    background-image: url("img/cookiebg.jpeg");
+    height: 700px; 
+    width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+} 
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: #f0ede3;
+    opacity: .5
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #f5b19c;
+    height: 30px;
+    width: 100vw;
+}
+ 
