@@ -114,7 +114,8 @@ li{
 .overlay{
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.2);
+    background: #f0ede3;
+    opacity: .5
 }
 
 
