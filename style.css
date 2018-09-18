@@ -1,0 +1,154 @@
+/* color palete */
+/* #303960 -> purple */
+/* #f0ede3 -> white */
+/* #f5b19c -> pink  */
+/* #f6c570 -> yellow */
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    margin:0;
+    padding: 0;
+}
+
+#title{
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -10px;
+    left: 40%;
+}
+
+nav{
+    background-color: #f5b19c;
+    height: 30px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+ 
+}
+
+li {
+    /* display: block; */
+    transition-duration: 0.5s;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top:-10px;
+    /* background: #white; */
+    /* top:-4px; */
+    /* padding-right: 40px; */
+    background-color: transparent;
+    height: 70px;
+   }
+   .real li{
+       background-color: orange;
+       margin: 0;
+   }
+   a{
+       margin: 0;
+       padding: 0;
+       /* background-color: brown; */
+   }
+   
+   li:hover {
+     cursor: pointer;
+     
+     
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   #navButton{
+    /* background-color: red; */
+    width: 60px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+     padding: 0;
+    margin: 0;
+
+   }
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+     padding: 0;
+    margin: 0;
+   }
+
+  .dropdown{
+       background:yellow;
+       position: relative;
+       top: 40px;
+       padding: 0;
+       margin: 0;
+       
+   }
+
+.toggleNavButtonTop{
+    width: 30px;
+    height: 2px;
+    background-color: #f0ede3;
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+       margin: 0;
+}
+
+.toggleNavButtonMid{
+    width: 30px;
+    height: 2px;
+    background-color: #f0ede3;
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+       margin: 0;
+}
+
+.toggleNavButtonBot{
+    width: 30px;
+    height: 2px;
+    background-color: #f0ede3;
+    position: absolute;
+    left: 30px;
+    top: 28px;
+    margin-left: -20px;
+    border-radius: 2px;
+    padding: 0;
+       margin: 0;
+}
+main{
+    /* background-color: green; */
+}
+.bg{
+    background-image: url("img/cookiebg.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
