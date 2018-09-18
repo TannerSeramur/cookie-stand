@@ -41,6 +41,10 @@ var shop1 = {
             listItem.textContent =hours[i] + ': ' + shop1.hourlySales[i];
             element.appendChild(listItem);
         }
+        var element = document.getElementById('store-title1');
+        var newText = document.createElement('p');
+        newText.textContent = 'Total Sale Today: ' + shop1.totalSale;
+        element.appendChild(newText);
     }
      
 }
@@ -80,6 +84,10 @@ var shop2 = {
             listItem.textContent =hours[i] + ': ' + shop2.hourlySales[i];
             element.appendChild(listItem);
         }
+        var element = document.getElementById('store-title2');
+        var newText = document.createElement('p');
+        newText.textContent = 'Total Sale Today: ' + shop2.totalSale;
+        element.appendChild(newText);
     }
      
 }
@@ -119,6 +127,10 @@ var shop3 = {
             listItem.textContent =hours[i] + ': ' + shop3.hourlySales[i];
             element.appendChild(listItem);
         }
+        var element = document.getElementById('store-title3');
+        var newText = document.createElement('p');
+        newText.textContent = 'Total Sale Today: ' + shop3.totalSale;
+        element.appendChild(newText);
     }
      
 }
@@ -158,6 +170,10 @@ var shop4 = {
             listItem.textContent =hours[i] + ': ' + shop4.hourlySales[i];
             element.appendChild(listItem);
         }
+        var element = document.getElementById('store-title4');
+        var newText = document.createElement('p');
+        newText.textContent = 'Total Sale Today: ' + shop4.totalSale;
+        element.appendChild(newText);
     }
      
 }
@@ -197,6 +213,10 @@ var shop5 = {
             listItem.textContent =hours[i] + ': ' + shop5.hourlySales[i];
             element.appendChild(listItem);
         }
+        var element = document.getElementById('store-title5');
+        var newText = document.createElement('p');
+        newText.textContent = 'Total Sale Today: ' + shop5.totalSale;
+        element.appendChild(newText);
     }
      
 }
