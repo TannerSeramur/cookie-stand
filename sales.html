@@ -41,7 +41,7 @@
    
         <h2>Cookies Sold:</h2>
         <div class = "tableContainer">
-        <table>
+        <table id = "storeTable">
             <thead>
                 <tr id = "tableHead">
                     <th class = "line">Store Location:</th>
@@ -70,6 +70,30 @@
             </tbody>
 
         </table>
+
+        </div>
+
+        <div id = "form-container">
+            <form id="storeForm">
+                <fieldset>
+                    <legend>Add New Store: </legend>
+
+                    <label for="name"> Enter Store Location: </label>
+                    <input type="text" name = "name">
+
+                    <label for="min"> Enter Hourly Minimum Customers : </label>
+                    <input type="int" name = "min">
+
+                    <label for="max"> Enter Hourly Maximum Customers : </label>
+                    <input type="int" name = "max">
+
+                    <label for="acpc"> Enter Average Cookies Per Customer : </label>
+                    <input type="int" name = "acpc">
+
+                    <button>Create a Store Location</button>
+
+                </fieldset>
+            </form>
         </div>
         
     
