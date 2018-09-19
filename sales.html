@@ -12,65 +12,58 @@
 </head>
 <body>
     <header>
-            <nav>
-                    <h1 id = "title">Pat's Salmon Cookies</h1>
-                    <ul>
-                        <li><a href="#">
-                                <div class = "navButton">
-                                    <div class="toggleNavButtonTop"></div>
-                                    <div class="toggleNavButtonMid"></div>
-                                    <div class="toggleNavButtonBot"></div>
-                                
-                                    <div class = "dropdown">
-                                        <ul>
-                                            <li class= "real"><a href="index.html">Home</a></li>
-                                            <li class= "real"><a href="sales.html">Sales</a></li>
-                                        </ul>  
-                                    </div>
-                                </div>
-                            </a>
-                             
-                        </li>
-                    </ul>
-        
-                </nav>
-    </header>
+        <nav>
+            <h1 id = "title">Pat's Salmon Cookies</h1>
+            <ul>
+                <li><a href="#">
+                    <div class = "navButton">
+                        <div class="toggleNavButtonTop"></div>
+                        <div class="toggleNavButtonMid"></div>
+                        <div class="toggleNavButtonBot"></div>    
 
+                        <div class = "dropdown">
+                            <ul>
+                                <li class= "real"><a href="index.html">Home</a></li>
+                                <li class= "real"><a href="sales.html">Sales</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                    </a>
+                             
+                </li>
+            </ul>
+        
+        </nav>
+    </header>
 
     <main >
    
         <h2>Cookies Sold:</h2>
         <div class = "tableContainer">
-        <table id = "storeTable">
-            <thead>
-                <tr id = "tableHead">
-                    <th class = "line">Store Location:</th>
-                    <th class = "line">6:00am</th>
-                    <th class = "line">7:00am</th>
-                    <th class = "line">8:00am</th>
-                    <th class = "line">9:00am</th>
-                    <th class = "line">10:00am</th>
-                    <th class = "line">11:00am</th>
-                    <th class = "line">12:00am</th>
-                    <th class = "line">1:00pm</th>
-                    <th class = "line">2:00pm</th>
-                    <th class = "line">3:00pm</th>
-                    <th class = "line">4:00pm</th>
-                    <th class = "line">5:00pm</th>
-                    <th class = "line">6:00pm</th>
-                    <th class = "line">7:00pm</th>
-                    <th class = "line">8:00pm</th>
-                    <th class = "line">Total Day Sales:</th>
-                </tr>
-                <!-- <tr id = "tableHead"></tr> -->
-                
-            </thead>
-            <tbody id = "tbody">
-
-            </tbody>
-
-        </table>
-
+            <table id = "storeTable">
+                <thead>
+                    <tr id = "tableHead">
+                        <th class = "line">Store Location:</th>
+                        <th class = "line">6:00am</th>
+                        <th class = "line">7:00am</th>
+                        <th class = "line">8:00am</th>
+                        <th class = "line">9:00am</th>
+                        <th class = "line">10:00am</th>
+                        <th class = "line">11:00am</th>
+                        <th class = "line">12:00am</th>
+                        <th class = "line">1:00pm</th>
+                        <th class = "line">2:00pm</th>
+                        <th class = "line">3:00pm</th>
+                        <th class = "line">4:00pm</th>
+                        <th class = "line">5:00pm</th>
+                        <th class = "line">6:00pm</th>
+                        <th class = "line">7:00pm</th>
+                        <th class = "line">8:00pm</th>
+                        <th class = "line">Total Day Sales:</th>
+                    </tr>
+                </thead>
+                <tbody id = "tbody"></tbody>
+            </table>
         </div>
 
         <div id = "form-container">
@@ -82,29 +75,23 @@
                     <input type="text" name = "name">
 
                     <label for="min"> Enter Hourly Minimum Customers : </label>
-                    <input type="int" name = "min">
+                    <input type="number" name = "min">
 
                     <label for="max"> Enter Hourly Maximum Customers : </label>
-                    <input type="int" name = "max">
+                    <input type="number" name = "max">
 
                     <label for="acpc"> Enter Average Cookies Per Customer : </label>
-                    <input type="int" name = "acpc">
+                    <input type="number" name = "acpc">
 
                     <button>Create a Store Location</button>
 
                 </fieldset>
             </form>
         </div>
-        
-    
-        
-        
-        
     </main>
 
     <footer></footer>
 
-    <!-- <script src = "app.js"></script> -->
     <script src = "appp.js"></script>
     
 </body>

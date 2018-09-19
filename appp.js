@@ -31,6 +31,7 @@ var Shop = function(name, min, max, acpc){
     this.render = function(){
         var element = document.getElementById('tbody');
         var times = document.createElement('tr');
+        console.log(element);
         element.appendChild(times);
         console.log(element);
         var storeTitle = document.createElement('th');
@@ -48,28 +49,26 @@ var Shop = function(name, min, max, acpc){
         newText.textContent = Shop.totalSale;
         times.appendChild(newText);
     };
-
 }
 Shop.shops = [];
 Shop.totalSum = [];
 
-var shop1 = new Shop('1st and Pike', 23, 65, 6.3);
-var shop2 = new Shop('SeaTac Airport', 3, 34, 1.4);
-var shop3 = new Shop('Seattle Center', 11, 38, 3.7);
-var shop4 = new Shop('Capital Hill', 20, 38, 2.3);
-var shop5 = new Shop('Alki', 2, 16, 4.6);
+new Shop('1st and Pike', 23, 65, 6.3);
+new Shop('SeaTac Airport', 3, 34, 1.4);
+new Shop('Seattle Center', 11, 38, 3.7);
+new Shop('Capital Hill', 20, 38, 2.3);
+new Shop('Alki', 2, 16, 4.6);
 
-function storeSalesInfo(theShop){
-    theShop.randNum();
-    theShop.getHourlySales();
-    theShop.render();
+function storeSalesInfo(){
+    for(var i = 0; i < Shop.shops.length; i++){
+    console.log(i);
+    console.log(Shop.shops[i]);
+    Shop.shops[i].getHourlySales();
+    Shop.shops[i].render(); 
+    }
 }
 
-storeSalesInfo(shop1);
-storeSalesInfo(shop2);
-storeSalesInfo(shop3);
-storeSalesInfo(shop4);
-storeSalesInfo(shop5);
+storeSalesInfo();
 
 Shop.prototype.getHourTotals = function(){
     var companyTotal = 0;
@@ -80,7 +79,7 @@ Shop.prototype.getHourTotals = function(){
     totalsTitle.textContent = 'Totals: '; 
     times.appendChild(totalsTitle);
 
-    for(i = 0; i < hours.length; i++){
+    for(var i = 0; i < hours.length; i++){
         var hourSum = 0
         for(j = 0; j < Shop.shops.length; j++){
             hourSum += Shop.shops[j].hourlySales[i];    
@@ -90,7 +89,7 @@ Shop.prototype.getHourTotals = function(){
         times.appendChild(timesTD);        
     }
     
-    for(i = 0; i < Shop.shops.length; i++){
+    for(var i = 0; i < Shop.shops.length; i++){
         companyTotal += Shop.totalSum[i];
     }
     var timesTD = document.createElement('td');
@@ -100,8 +99,8 @@ Shop.prototype.getHourTotals = function(){
 
 
 function renderStores() {
-    for(i = 0; i < Shop.shops; i++) {
-      i.render();
+    for(var i = 0; i < Shop.shops; i++) {
+      Shop.shops[i].render();
       console.log(Shop.shops[i]);
     }
   }
@@ -111,28 +110,26 @@ function addNewStore(event){
     console.log(event.target.name.value);
 
     var newName = event.target.name.value;
-    var newMin = event.target.min.value;
-    var newMax = event.target.max.value;
-    var newACPC = event.target.acpc.value
+    var newMin = parseInt(event.target.min.value);
+    var newMax = parseInt(event.target.max.value);
+    var newACPC = parseInt(event.target.acpc.value);
 
     new Shop(newName, newMin, newMax, newACPC);
 
-    storeTable.innerHTML = '';
-    storeSalesInfo(Shop.shops);
+    document.getElementById('tbody').innerHTML = '';
+    storeSalesInfo(Shop.shops[Shop.shops.length - 1]);
+
     renderStores();
-
-
+    Shop.shops[1].getHourTotals(Shop.shops);
 
 }
+
 storeForm.addEventListener('submit', addNewStore);
-// shop1.render();
-storeSalesInfo();
+
 renderStores();
 
 
-// console.log(event.target.name.value);
-shop1.getHourTotals(Shop.shops);
 
-
+Shop.shops[1].getHourTotals(Shop.shops);
 
 
