@@ -30,7 +30,6 @@ var shop1 = {
     },
     render: function(){
         var element = document.getElementById('store-title1');
-        console.log(element);
         var storeTitle = document.createElement('h3');
         storeTitle.textContent = shop1.name; 
         element.appendChild(storeTitle); 
@@ -233,6 +232,10 @@ storeSalesInfo(shop2);
 storeSalesInfo(shop3);
 storeSalesInfo(shop4);
 storeSalesInfo(shop5);
+
+function randomNum(){
+    console.log("yeet");
+}
 
 
 

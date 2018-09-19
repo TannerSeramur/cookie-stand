@@ -12,12 +12,11 @@ var Shop = function(name, min, max, acpc){
         return Math.random() * (this.maxHourlyCustomers - this.minHourlyCustomers) + this.minHourlyCustomers;
     };
     this.getHourlySales = function(){
+        Shop.totalSale = 0;
         for(i=0; i < hours.length; i++){
             var hourSale = Math.floor(this.randNum() * this.acpc);
             this.hourlySales.push(hourSale);
             Shop.totalSale += hourSale;
-            // console.log(this.randNum(), this.acpc, hourSale);
-            // console.log(hourSale);
             console.log(this.hourlySales);
 
         };
@@ -40,7 +39,7 @@ var Shop = function(name, min, max, acpc){
 
          }
         timesTD = document.getElementById('salesTable');
-        var newText = document.createElement('p');
+        var newText = document.createElement('td');
         newText.textContent = Shop.totalSale;
         times.appendChild(newText);
     }

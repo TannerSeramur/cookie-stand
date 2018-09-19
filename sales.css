@@ -1,0 +1,50 @@
+/* color palete */
+/* #303960 -> purple */
+/* #f0ede3 -> white */
+/* #f5b19c -> pink  */
+/* #f6c570 -> yellow */
+
+main{
+    height: 700px; 
+    width: 100vw;
+    background-color: #white; 
+    
+}
+
+h2{
+    font-family: 'Lilita One', cursive;
+    font-size: 60px;
+    color: #303960;
+    text-align: center;
+}
+
+table{
+    overflow:hidden;
+    width:100%; 
+    margin: 0px;
+    padding: 0px; 
+    border-radius: 20px; 
+
+
+}
+th, td {
+    padding: 10px;
+    color: black;
+}
+tr:first-child {
+    border-bottom:3px solid navy;
+    color:navy;
+}
+.tableContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    border-bottom:3px solid #303960;
+    color:#303960;
+}
+#tbody tr:hover {
+    background:#f6c570;
+    color:#fff;
+}
