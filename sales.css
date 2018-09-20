@@ -102,8 +102,9 @@ button{
 }
 .salmonLogo{
     position: absolute;
-    top: 600px;
-    left: 380px;
+    top: 550px;
+    left: 350px;
+    opacity: .1;
    
 
 }
