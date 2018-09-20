@@ -55,7 +55,7 @@ tr:first-child {
 }
 /* form styles */
 form{
-    width: 300px;
+    width: 100vw;
     height: 1800px;
     border: none;
     
@@ -89,7 +89,7 @@ legend{
 }
 button{
     padding: 5px 10px;
-    width: 60%;
+    width: 20%;
     height: 30px;
     color: white;
     font-family:'Open Sans';
@@ -102,8 +102,8 @@ button{
 }
 .salmonLogo{
     position: absolute;
-    top: 450px;
-    left: 400px;
+    top: 600px;
+    left: 350px;
    
 
 }
