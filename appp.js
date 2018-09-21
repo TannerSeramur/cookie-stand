@@ -129,8 +129,6 @@ storeForm.addEventListener('submit', addNewStore);
 
 renderStores();
 
-
-
 Shop.shops[1].getHourTotals(Shop.shops);
 
 
