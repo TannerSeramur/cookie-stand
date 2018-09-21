@@ -2,82 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Tanner Seramur" content="Salmon Cookies Sales Page">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sales.css">
     <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <title>Sales</title>
 </head>
 <body>
     <header>
-            <nav>
-                    <h1 id = "title">Pat's Salmon Cookies</h1>
-                    <ul>
-                        <li><a href="#">
-                                <div class = "navButton">
-                                    <div class="toggleNavButtonTop"></div>
-                                    <div class="toggleNavButtonMid"></div>
-                                    <div class="toggleNavButtonBot"></div>
-                                
-                                    <div class = "dropdown">
-                                        <ul>
-                                            <li class= "real"><a href="index.html">Home</a></li>
-                                            <li class= "real"><a href="sales.html">Sales</a></li>
-                                        </ul>  
-                                    </div>
-                                </div>
-                            </a>
+        <nav>
+            <h1 id = "title">Pat's Salmon Cookies</h1>
+            <ul>
+                <li><a href="#">
+                    <div class = "navButton">
+                        <div class="toggleNavButtonTop"></div>
+                        <div class="toggleNavButtonMid"></div>
+                        <div class="toggleNavButtonBot"></div>    
+
+                        <div class = "dropdown">
+                            <ul>
+                                <li class= "real"><a href="index.html">Home</a></li>
+                                <li class= "real"><a href="sales.html">Sales</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                    </a>
                              
-                        </li>
-                    </ul>
+                </li>
+            </ul>
         
-                </nav>
+        </nav>
     </header>
 
-    <main>
-
-        <div class = "store1">
-        <div id = "store-title1">
-            </div>
-            <ul id = "list-1">
-            </ul>
+    <main >
+   
+        <h2>Cookies Sold:</h2>
+        <div class = "tableContainer">
+            <table id = "storeTable">
+                <thead>
+                    <tr id = "tableHead">
+                        <th class = "line">Store Location:</th>
+                        <th class = "line">6:00am</th>
+                        <th class = "line">7:00am</th>
+                        <th class = "line">8:00am</th>
+                        <th class = "line">9:00am</th>
+                        <th class = "line">10:00am</th>
+                        <th class = "line">11:00am</th>
+                        <th class = "line">12:00am</th>
+                        <th class = "line">1:00pm</th>
+                        <th class = "line">2:00pm</th>
+                        <th class = "line">3:00pm</th>
+                        <th class = "line">4:00pm</th>
+                        <th class = "line">5:00pm</th>
+                        <th class = "line">6:00pm</th>
+                        <th class = "line">7:00pm</th>
+                        <th class = "line">8:00pm</th>
+                        <th class = "line">Total Day Sales:</th>
+                    </tr>
+                </thead>
+                <tbody id = "tbody"></tbody>
+            </table>
         </div>
 
-        <div class = "store2">
-                <div id = "store-title2">
-                    </div>
-                    <ul id = "list-2">
-                    </ul>
-                </div>
+        <div id = "form-container">
+            <form id="storeForm">
+                <fieldset>
+                    <legend>Add New Store: </legend>
 
-        <div class = "store3">
-                <div id = "store-title3">
-                    </div>
-                    <ul id = "list-3">
-                    </ul>
-                </div>
+                    <label for="name"></label>
+                    <input type="text" name = "name" placeholder="Enter Store Location: ">
 
-        <div class = "store4">
-                <div id = "store-title4">
-                    </div>
-                    <ul id = "list-4">
-                    </ul>
-                </div>
+                    <label for="min"></label>
+                    <input type="number" name = "min" placeholder="Enter Hourly Minimum Customers :">
 
-        <div class = "store5">
-                <div id = "store-title5">
-                    </div>
-                    <ul id = "list-5">
-                    </ul>
-                </div>
-        
-        
+                    <label for="max"></label>
+                    <input type="number" name = "max" placeholder="Enter Hourly Maximum Customers : ">
+
+                    <label for="acpc"></label>
+                    <input type="number" name = "acpc" placeholder=" Enter Average Cookies Per Customer : ">
+
+                    <button>Create a Store Location</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div class = "salmonLogo">
+            <img src="img/salmon.png" alt="salmon-logo" >
+        </div>
+
+
     </main>
 
     <footer></footer>
 
-    <script src = "app.js"></script>
+    <script src = "appp.js"></script>
     
 </body>
 </html>

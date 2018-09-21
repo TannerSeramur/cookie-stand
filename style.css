@@ -119,7 +119,12 @@ li{
 }
 
 
-
+/* .homeImg{
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+} */
 
 
 
@@ -130,4 +135,3 @@ footer{
     height: 30px;
     width: 100vw;
 }
- 
